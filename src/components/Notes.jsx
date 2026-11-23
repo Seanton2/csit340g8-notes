@@ -7,15 +7,17 @@ function Notes() {
         title: "Review map and filter",
         body: "Redo the TodoMVC steps without looking at the guide." },
         {id: 2,
-        title: "Review map and filter",
-        body: "Redo the TodoMVC steps without looking at the guide." }
+        title: "Prepare for the quiz",
+        body: "Practice writing one handler for many inputs." }
 
     ]);
-
+    
      const [newNote, setNewNote] = useState({
             title: "",
             body: ""
         });
+
+        
         function handleInputChange(e) {
             const { name, value } = e.target;
             setNewNote((prevNote) => ({
@@ -102,6 +104,7 @@ function Notes() {
           </li>
           ))}
           </ul>
+          <p className="text-lg text-[#949494]">No notes found</p>
        
         
       </section>
